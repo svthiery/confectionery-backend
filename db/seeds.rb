@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+User.create(username: "sarah", password: "123")
+
+Order.create(user_id: 1)
+
+Candy.create(name: "Skittles", category: "Fruit")
+Candy.create(name: "Peppermint Pattie", category: "Chocolate")
+CandyOrder.create(order_id: 1, candy_id: 2)
+CandyOrder.create(order_id: 1, candy_id: 1)
