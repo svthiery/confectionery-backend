@@ -16,3 +16,16 @@ Candy.create(name: "Skittles", category: "Fruit")
 Candy.create(name: "Peppermint Pattie", category: "Chocolate")
 CandyOrder.create(order_id: 1, candy_id: 2)
 CandyOrder.create(order_id: 1, candy_id: 1)
+
+t.string "name"
+t.string "category"
+t.integer "price"
+t.integer "discount"
+t.string "flavor"
+t.string "color"
+t.datetime "created_at", precision: 6, null: false
+t.datetime "updated_at", precision: 6, null: false
+t.string "primary_img"
+t.string "alt_img"
+
+Candy.create(name: "")
