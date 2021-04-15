@@ -28,4 +28,4 @@ t.datetime "updated_at", precision: 6, null: false
 t.string "primary_img"
 t.string "alt_img"
 
-Candy.create(name: "")
+Candy.create(name: "Milk Chocolate Bar", category: "Chocolate")

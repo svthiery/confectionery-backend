@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :categories
+  resources :candy_categories
   resources :candies
   resources :candy_orders
   resources :orders

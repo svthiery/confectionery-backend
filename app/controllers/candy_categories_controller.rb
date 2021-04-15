@@ -1,0 +1,2 @@
+class CandyCategoriesController < ApplicationController
+end
