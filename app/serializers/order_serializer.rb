@@ -1,3 +1,3 @@
 class OrderSerializer < ActiveModel::Serializer
-  attributes :id, :datetime
+  attributes :id, :datetime, :user, :candies
 end
