@@ -19,4 +19,10 @@ class UsersController < ApplicationController
         @current_user.update(user_params)
         render json: @current_user
     end
+
+    private
+
+    def user_params
+        params.permit(:username, :profile_img, :billing_name, :billing_street1, :billing_street2, :billing_city, :billing_zip, :billing_state, :shipping_name, :shipping_street1, :shipping_street2, :shipping_city, :shipping_zip, :shipping_state, :email)
+    end
 end
