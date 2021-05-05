@@ -8,4 +8,9 @@ class CandyOrdersController < ApplicationController
         @candyOrder = CandyOrder.find(params[:id])
         render json: @candyOrder
     end
+
+    def create
+        @candyOrder = CandyOrder.create(:user_id, :candy_id)
+        render json: @candyOrder
+    end
 end

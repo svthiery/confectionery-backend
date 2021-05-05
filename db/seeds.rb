@@ -17,7 +17,7 @@ CandyCategory.destroy_all
 
 User.create(username: "sarah", password: "123")
 
-Order.create(user_id: 1)
+Order.create(user_id: 1, status: "completed")
 
 # Candy.create(name: "Skittles", category: "Fruit")
 # Candy.create(name: "Peppermint Pattie", category: "Chocolate")
