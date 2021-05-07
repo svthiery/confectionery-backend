@@ -1,3 +1,3 @@
 class CandyOrderSerializer < ActiveModel::Serializer
-  attributes :id, :user, :candy
+  attributes :id, :candy_id, :order_id
 end

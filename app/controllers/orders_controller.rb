@@ -22,6 +22,6 @@ class OrdersController < ApplicationController
     private
 
     def order_params
-        params.permit(:datetime, :user_id, :status, :candies)
+        params.permit(:datetime, :user_id, :status, :candy_orders)
     end
 end

@@ -94,3 +94,6 @@ CandyCategory.create(candy_id: 6, category_id: 5)
 # CandyCategory.create(candy_id: , category_id: )
 # CandyCategory.create(candy_id: , category_id: )
 # CandyCategory.create(candy_id: , category_id: )
+
+CandyOrder.create(order_id: 1, candy_id: 2)
+CandyOrder.create(order_id: 1, candy_id: 2)
