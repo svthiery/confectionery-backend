@@ -13,6 +13,7 @@ Candy.destroy_all
 Order.destroy_all
 Category.destroy_all
 CandyCategory.destroy_all
+CandyOrder.destroy_all
 
 
 User.create(username: "sarah", password: "123")
