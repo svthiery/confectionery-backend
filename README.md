@@ -1,24 +1,27 @@
-# README
+# The Confectionery 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails backend for The Confectionery, an e-commerce web app with responsive design. 
 
-Things you may want to cover:
+[Frontend](https://github.com/svthiery/confectionery-frontend) deployed at https://theconfectionery.netlify.app/
 
-* Ruby version
+Backend deployed as an API at https://gentle-depths-95024.herokuapp.com/
 
-* System dependencies
+Ruby-2.7.3
 
-* Configuration
+## Instructions
 
-* Database creation
+To launch this application, please follow the steps below:
 
-* Database initialization
+-- Clone this repo in your computer's terminal.
 
-* How to run the test suite
+-- Open repo in your text editor.
 
-* Services (job queues, cache servers, search engines, etc.)
+-- In your terminal, run `bundle install` to install the required dependencies.
 
-* Deployment instructions
+-- Run `rails db:create` to create a local database.
 
-* ...
+-- Run `rails db:migrate` to add tables to the database.
+
+-- Run `rails db:seed` to seed the database.
+
+-- Run `rails s` to run the local server.
