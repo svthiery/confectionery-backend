@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root "candies#index"
   resources :categories
   resources :candy_categories
   resources :candies
