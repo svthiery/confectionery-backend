@@ -2,7 +2,7 @@
 
 Rails backend for The Confectionery, an e-commerce web app with responsive design. 
 
-Frontend deployed at https://theconfectionery.netlify.app/
+[Frontend](https://github.com/svthiery/confectionery-frontend) deployed at https://theconfectionery.netlify.app/
 
 Backend deployed as an API at https://gentle-depths-95024.herokuapp.com/
 
