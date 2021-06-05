@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root "candies#index"
   post "/login", to: "users#login"
+  get "/me", to: "users#show"
   resources :categories
   resources :candy_categories
   resources :candies
