@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   root "candies#index"
   post "/login", to: "users#login"
   get "/me", to: "users#show"
-  post '/create-checkout-session', to: "orders#create_checkout_session"
+  post "/create-checkout-session", to: "orders#create_checkout_session"
   resources :categories
   resources :candy_categories
   resources :candies

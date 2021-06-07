@@ -1,4 +1,6 @@
 class OrdersController < ApplicationController
+    Stripe.api_key = "sk_test_51Iz605Hg3ejnjMiazYrTiDJ9Do6pZh6ACmUj7xrqcWq5KantR9SpLhNbpqByaPoreFAQV8kY2BUC4dZt6MuszJhV00IUlsWujV"
+
     def index
         @orders = Order.all
         render json: @orders
@@ -34,11 +36,12 @@ class OrdersController < ApplicationController
             }],
             mode: 'payment',
             # These placeholder URLs will be replaced in a following step.
-            success_url: 'https://example.com/success',
-            cancel_url: 'https://example.com/cancel',
+            success_url: 'https://theconfectionery.netlify.app/shop/2',
+            cancel_url: 'https://theconfectionery.netlify.app/',
             })
 
-        { id: session.id }.to_json
+        # { id: session.id }.to_json
+        render json: { id: session.id }
     end
 
     private
