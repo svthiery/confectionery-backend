@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :visits
   root "candies#index"
   post "/login", to: "users#login"
   get "/me", to: "users#show"
