@@ -10,6 +10,7 @@ class VisitsController < ApplicationController
         render json: @visit
     end
 
+    # test
     private
 
     def visit_params
