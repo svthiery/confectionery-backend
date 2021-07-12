@@ -9,8 +9,7 @@ class VisitsController < ApplicationController
         @visit = Visit.create(visit_params)
         render json: @visit
     end
-
-    # test
+    
     private
 
     def visit_params
