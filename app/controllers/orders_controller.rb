@@ -28,7 +28,8 @@ class OrdersController < ApplicationController
                 price_data: {
                     currency: 'usd',
                     product_data: {
-                        name: 'T-shirt',
+                        # name: 'T-shirt',
+                        name: params[:name],
                     },
                     unit_amount: 2000,
             },
