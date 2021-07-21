@@ -22,19 +22,33 @@ class OrdersController < ApplicationController
     end
 
     def create_checkout_session
+        candy_orders = params[:_json]
+        # candy_array = candy_orders.map { |order| { name: order[:candy][:name], price: order[:candy][:price] }}
+        candy_array = candy_orders.map { |order| {
+            price_data: {
+                currency: 'usd',
+                product_data: {
+                    name: order[:candy][:name]
+                },
+                unit_amount: order[:candy][:price] * 100
+        },
+        quantity: 1,
+        }
+    }
         session = Stripe::Checkout::Session.create({
             payment_method_types: ['card'],
-            line_items: [{
-                price_data: {
-                    currency: 'usd',
-                    product_data: {
-                        # name: 'T-shirt',
-                        name: params[:name],
-                    },
-                    unit_amount: 2000,
-            },
-            quantity: 1,
-            }],
+            line_items: candy_array,
+            # line_items: [{
+            #     price_data: {
+            #         currency: 'usd',
+            #         product_data: {
+            #             # name: 'T-shirt',
+            #             # name: params[:name],
+            #         },
+            #         unit_amount: params
+            # },
+            # quantity: 1,
+            # }],
             mode: 'payment',
             # These placeholder URLs will be replaced in a following step.
             success_url: 'https://theconfectionery.netlify.app/shop/2',
