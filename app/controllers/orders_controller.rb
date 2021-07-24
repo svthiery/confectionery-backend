@@ -51,7 +51,7 @@ class OrdersController < ApplicationController
             # }],
             mode: 'payment',
             # These placeholder URLs will be replaced in a following step.
-            success_url: 'https://theconfectionery.netlify.app/shop/2',
+            success_url: 'https://theconfectionery.netlify.app/',
             cancel_url: 'https://theconfectionery.netlify.app/',
             })
 
