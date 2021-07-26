@@ -16,6 +16,10 @@ class UsersController < ApplicationController
     end
 
     def show
+        #TODO: check the user's token
+        #If their token is valid, get their details from the database
+        # return that user
+        #if not, return some error message
         render json: User.first
     end
 
